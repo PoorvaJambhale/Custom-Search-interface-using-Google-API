@@ -38,14 +38,14 @@ public class API extends HttpServlet{
 		}
 		qStr = qStr.concat(qArray[qArray.length - 1]);
 			
-		String str1 = "https://www.googleapis.com/customsearch/v1?key=AIzaSyDobtw2CzTHDilTotJ8Ut3M0dJQRoOTbgo&cx=011847803024786559993:3bpaf8ytjya&prettyPrint=true&q=";
+		String str1 = "https://www.googleapis.com/customsearch/v1?key=key&cx=cx&prettyPrint=true&q=";
 		String str2 = "\";"; 
 			
 		String url = str1.concat(qStr);
 		String urlString = url.concat(str2);
 		String r = httpGet(urlString); // Get first 10 results.
 		
-		String str3 = "https://www.googleapis.com/customsearch/v1?key=AIzaSyDobtw2CzTHDilTotJ8Ut3M0dJQRoOTbgo&cx=011847803024786559993:3bpaf8ytjya&start=11&prettyPrint=true&q=";
+		String str3 = "https://www.googleapis.com/customsearch/v1?key=key&cx=cx&start=11&prettyPrint=true&q=";
 		url = "";
 		urlString = "";
 		url = str3.concat(qStr);
